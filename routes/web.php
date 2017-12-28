@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/led', 'LEDController@index');
+Route::post('/led', 'LEDController@store')->name('led');
