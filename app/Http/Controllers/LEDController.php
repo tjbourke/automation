@@ -47,6 +47,14 @@ class LEDController extends Controller
             fclose($handle);
         }
 
-        return redirect('/led');
+        return redirect('/');
     }
+    
+    public function status()
+    {
+		$file = "buttonStatus.txt";
+        $handle = fopen($file,'r');
+        $status = fgets($handle);
+        return $status;
+	}
 }

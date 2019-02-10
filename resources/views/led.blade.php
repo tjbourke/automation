@@ -15,7 +15,7 @@
 	<body>
 	<div class="container">
 		<br>
-		<h2>LED Matrix Control</h2>
+		<h2>LED Matrix Control 3</h2>
 		<form action="{{ route('led') }}" method="POST" enctype="multipart/form-data">
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
